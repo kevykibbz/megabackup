@@ -1,5 +1,5 @@
 === MegaFile - Backup and restore ===
-Contributors: your-username
+Contributors: kevykibbz
 Tags: backup, restore, database, files, security
 Requires at least: 5.0
 Tested up to: 6.4
