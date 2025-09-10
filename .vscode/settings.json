@@ -1,0 +1,5 @@
+{
+    "powerquery.client.additionalSymbolsDirectories": [
+        "c:/xampp/htdocs/wordpress/wp-content/plugins/MegaBackupRestore/.vscode/excel-pq-symbols"
+    ]
+}

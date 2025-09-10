@@ -1,0 +1,15 @@
+it has an error its not taking backup
+just this needs to be fixed
+
+
+right now the issue is sometime it gives space error 
+and on altervista websites therr are unlimited space
+
+so it should work on every website and it should compleye backup smoothly and the schedule backup should also work
+
+
+its just an error nothing else
+
+it should do backup everytime even if its of GB’s
+
+and it should work on all websites
