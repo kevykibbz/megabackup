@@ -455,6 +455,10 @@ class MegaBackup_Admin {
                         data-recommended-size="<?php echo esc_attr($recommended_size); ?>">
                     <?php _e('Start Backup', 'megabackup'); ?>
                 </button>
+                
+                <button id="stop-backup" class="button button-secondary button-hero" style="display: none; margin-left: 10px;">
+                    <?php _e('Stop Backup', 'megabackup'); ?>
+                </button>
 
                 <div id="backup-selection-warning" class="notice notice-warning inline" style="display: none; margin-top: 10px;">
                     <p><?php _e('Please select at least one backup option to continue.', 'megabackup'); ?></p>
@@ -606,7 +610,7 @@ class MegaBackup_Admin {
                     <div class="schedule-options">
                         <div class="schedule-enable">
                             <label class="schedule-toggle">
-                                <input type="checkbox" id="schedule-enabled-checkbox" name="schedule_enabled" value="1" <?php checked(isset($schedule_settings['enabled']) ? $schedule_settings['enabled'] : false, true); ?>>
+                                <input type="checkbox" id="schedule-enabled-checkbox" name="schedule_enabled" value="1" <?php checked(isset($schedule_settings['enabled']) ? $schedule_settings['enabled'] : false, false); ?>>
                                 <span class="toggle-slider"></span>
                                 <strong><?php _e('Enable Automatic Backups', 'megabackup'); ?></strong>
                             </label>
@@ -628,6 +632,30 @@ class MegaBackup_Admin {
                                 <input type="time" name="schedule_time" id="schedule-time" value="<?php echo esc_attr($schedule_settings['time']); ?>" style="width: 100%; box-sizing: border-box;">
                                 <p class="description"><?php _e('Choose the preferred time for the backup to run (12-hour format)', 'megabackup'); ?></p>
                             </div>
+                        </div>
+
+                        <!-- Backup Options Section -->
+                        <div class="schedule-backup-options" style="margin-top: 20px;">
+                            <h3><?php _e('What to Include in Scheduled Backups', 'megabackup'); ?></h3>
+                            <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                                <label style="display: flex; align-items: center; gap: 8px;">
+                                    <input type="checkbox" name="schedule_include_database" value="1" <?php checked(isset($schedule_settings['include_database']) ? $schedule_settings['include_database'] : true, true); ?>>
+                                    <span><?php _e('Database', 'megabackup'); ?></span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 8px;">
+                                    <input type="checkbox" name="schedule_include_uploads" value="1" <?php checked(isset($schedule_settings['include_uploads']) ? $schedule_settings['include_uploads'] : true, true); ?>>
+                                    <span><?php _e('Media Files (Uploads)', 'megabackup'); ?></span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 8px;">
+                                    <input type="checkbox" name="schedule_include_themes" value="1" <?php checked(isset($schedule_settings['include_themes']) ? $schedule_settings['include_themes'] : true, true); ?>>
+                                    <span><?php _e('Themes', 'megabackup'); ?></span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 8px;">
+                                    <input type="checkbox" name="schedule_include_plugins" value="1" <?php checked(isset($schedule_settings['include_plugins']) ? $schedule_settings['include_plugins'] : true, true); ?>>
+                                    <span><?php _e('Plugins', 'megabackup'); ?></span>
+                                </label>
+                            </div>
+                            <p class="description" style="margin-top: 10px;"><?php _e('Select which components to include in your scheduled backups', 'megabackup'); ?></p>
                         </div>
                     </div>
 
@@ -1289,16 +1317,16 @@ error_log
                 }
 
                 if (!empty($recommendations)): ?>
-                    <div class="recommendations" style="margin: 0; padding: 20px; height: 100%;">
+                    <div class="recommendations" style="margin: 0; padding: 20px; max-height: 300px; overflow-y: auto;">
                         <h4 style="margin-top: 0;"><?php _e('💡 Recommendations to Optimize Backups', 'megabackup'); ?></h4>
                         <ul style="margin-bottom: 0;">
                             <?php foreach ($recommendations as $recommendation): ?>
-                                <li><?php echo esc_html($recommendation); ?></li>
+                                <li style="margin-bottom: 8px; line-height: 1.4;"><?php echo esc_html($recommendation); ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
                 <?php else: ?>
-                    <div class="recommendations" style="background: #e8f5e8; border-left-color: #46b450; margin: 0; padding: 20px; height: 100%;">
+                    <div class="recommendations" style="background: #e8f5e8; border-left-color: #46b450; margin: 0; padding: 20px;">
                         <h4 style="color: #46b450; margin-top: 0;"><?php _e('✅ Optimized System', 'megabackup'); ?></h4>
                         <p style="margin: 0; color: #555;"><?php _e('Your system is correctly configured to perform reliable and fast backups.', 'megabackup'); ?></p>
                     </div>

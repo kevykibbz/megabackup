@@ -1,3 +1,58 @@
+/* Recommendations Section Styles */
+.recommendations-card {
+    align-self: start !important;
+    height: auto !important;
+    min-height: unset !important;
+}
+
+.recommendations {
+    margin: 0 !important;
+    padding: 20px !important;
+    background: #e7f3ff !important;
+    border-left: 4px solid #0073aa !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
+    min-height: unset !important;
+    height: auto !important;
+}
+
+.recommendations h4 {
+    margin: 0 0 10px 0 !important;
+    color: #0073aa !important;
+}
+
+.recommendations ul {
+    margin: 0 !important;
+    padding-left: 20px !important;
+}
+
+.recommendations li {
+    margin-bottom: 6px !important;
+    color: #555 !important;
+}
+
+/* Stop Backup Button Style - Match Start Button */
+#stop-backup.button-hero,
+#stop-backup.button,
+.stop-backup.button-hero,
+.stop-backup.button {
+    padding: 12px 24px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+    line-height: normal !important;
+    vertical-align: top !important;
+    min-height: 44px !important;
+}
+
+/* When stop button is visible, ensure proper display */
+#stop-backup.button:not([style*="display: none"]),
+.stop-backup.button:not([style*="display: none"]) {
+    display: inline-block !important;
+}
 .megabackup-admin {
     max-width: 1200px;
 }

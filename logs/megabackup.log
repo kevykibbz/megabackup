@@ -806,3 +806,494 @@ This appears to be a disk space issue. Even if your hosting shows 'unlimited spa
 [2025-09-10 12:15:56] [UNIFIED] [info] RESTORE: Restore finalized successfully.
 [2025-09-10 12:15:56] [UNIFIED] [info] RESTORE: Progress calculation - Step: completed, Progress: 100%
 [2025-09-10 12:15:56] [UNIFIED] [info] Restore job megabackup_restore_1757506551_6427 completed. Job data will be available for 5 more minutes.
+[2025-09-10 13:35:47] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:35:47] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:35:51] [UNIFIED] [info] OPTIMIZED-DOWNLOAD: Starting download for: mega-backup_2025-09-10_08-42-45_715.megafile
+[2025-09-10 13:35:51] [UNIFIED] [info] OPTIMIZED-DOWNLOAD: Environment configured for large file streaming
+[2025-09-10 13:35:51] [UNIFIED] [info] OPTIMIZED-DOWNLOAD: File size: 231 KB
+[2025-09-10 13:35:51] [UNIFIED] [info] OPTIMIZED-DOWNLOAD: Sending full content (200) - 236504 bytes
+[2025-09-10 13:35:51] [UNIFIED] [info] OPTIMIZED-DOWNLOAD: Headers set for streaming download
+[2025-09-10 13:35:51] [UNIFIED] [info] OPTIMIZED-DOWNLOAD: Starting stream - 236504 bytes to send
+[2025-09-10 13:35:51] [UNIFIED] [info] OPTIMIZED-DOWNLOAD: Stream completed successfully - 236504 bytes sent
+[2025-09-10 13:35:51] [UNIFIED] [info] OPTIMIZED-DOWNLOAD: Download completed successfully
+[2025-09-10 13:36:22] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:36:22] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:36:22] [UNIFIED] [info] Backup file uploaded successfully: mega-backup_2025-09-10_08-42-45_715_1.megafile
+[2025-09-10 13:36:34] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:36:34] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:36:43] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 13:36:43] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 13:36:43] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 13:36:43] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 13:36:43] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 13:36:43] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 13:36:43] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 13:36:43] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221417107456.0
+[2025-09-10 13:36:43] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 13:36:43] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 13:36:43] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 13:36:43] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 13:36:44] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:36:45] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:07] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:07] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:07] [UNIFIED] [info] AJAX: Backup job initiation started.
+[2025-09-10 13:37:07] [UNIFIED] [info] AJAX: Backup options - DB: YES, Uploads: NO, Themes: NO, Plugins: NO
+[2025-09-10 13:37:07] [UNIFIED] [info] BACKUP: Database backup enabled. Found 12 tables.
+[2025-09-10 13:37:07] [UNIFIED] [info] BACKUP: Uploads backup disabled by user.
+[2025-09-10 13:37:07] [UNIFIED] [info] BACKUP: Themes backup disabled by user.
+[2025-09-10 13:37:07] [UNIFIED] [info] BACKUP: Plugins backup disabled by user.
+[2025-09-10 13:37:07] [UNIFIED] [info] BACKUP: Job created. Total files to process: 1
+[2025-09-10 13:37:07] [UNIFIED] [info] AJAX: Backup job megabackup_1757511427_4159 created successfully. Total files: 1, DB Tables: 12
+[2025-09-10 13:37:07] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:08] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:08] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 2%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:10] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:10] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:10] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 5%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:12] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:12] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:12] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 8%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:14] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:14] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:14] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 11%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:16] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:16] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:17] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:17] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:17] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 13%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:19] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:19] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:19] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 16%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:22] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:22] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:22] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 19%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:24] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:24] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:24] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 22%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:26] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:26] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:26] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 25%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:28] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:28] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:28] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 27%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:30] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:30] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:30] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 30%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:32] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:32] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:32] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 33%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:34] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:34] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:34] [UNIFIED] [info] BACKUP: Database step completed. Next step: zip_files
+[2025-09-10 13:37:34] [UNIFIED] [info] BACKUP: Progress calculation - Step: zip_files, Progress: 33%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:37] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:37] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:37] [UNIFIED] [info] BACKUP: Checking disk space. Available: 206 GB
+[2025-09-10 13:37:37] [UNIFIED] [info] BACKUP: Disk space OK or unlimited hosting detected. Proceeding with normal batch size.
+[2025-09-10 13:37:37] [UNIFIED] [info] BACKUP: Processing batch of 100 files starting from offset 0
+[2025-09-10 13:37:37] [UNIFIED] [info] BACKUP: Batch completed. Files added: 0, Files skipped: 0
+[2025-09-10 13:37:37] [UNIFIED] [info] BACKUP: Progress calculation - Step: finalize, Progress: 99%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:39] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:37:39] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:37:39] [UNIFIED] [info] BACKUP: Starting finalization process...
+[2025-09-10 13:37:39] [UNIFIED] [info] BACKUP: Backup finalized successfully. File: mega-backup_2025-09-10_13-37-07_574.megafile
+[2025-09-10 13:37:39] [UNIFIED] [info] BACKUP: Temporary database file cleaned up successfully.
+[2025-09-10 13:37:39] [UNIFIED] [info] BACKUP: Final backup file size: 226 KB
+[2025-09-10 13:37:39] [UNIFIED] [info] BACKUP: Progress calculation - Step: completed, Progress: 100%, Enabled steps: database, zip_files, finalize
+[2025-09-10 13:37:40] [UNIFIED] [info] Backup job megabackup_1757511427_4159 completed. Job data will be available for 5 more minutes.
+[2025-09-10 13:46:42] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 13:46:42] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 13:46:42] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 13:46:42] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 13:46:42] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 13:46:42] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 13:46:42] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 13:46:42] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221276561408.0
+[2025-09-10 13:46:42] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 13:46:42] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 13:46:42] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 13:46:42] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 13:46:45] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:46:45] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:49:15] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 13:49:15] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 13:49:15] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 13:49:15] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 13:49:15] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 13:49:15] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 13:49:15] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 13:49:15] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221275373568.0
+[2025-09-10 13:49:15] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 13:49:15] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 13:49:15] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 13:49:15] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 13:49:15] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:49:16] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 13:50:14] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 13:50:14] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 13:50:14] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 13:50:14] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 13:50:14] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 13:50:14] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 13:50:14] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 13:50:14] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221275037696.0
+[2025-09-10 13:50:14] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 13:50:14] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 13:50:14] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 13:50:14] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 13:50:15] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 13:50:15] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:02:12] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:02:27] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:02:27] [UNIFIED] [info] AJAX: Backup job initiation started.
+[2025-09-10 16:02:27] [UNIFIED] [info] AJAX: Backup options - DB: YES, Uploads: YES, Themes: YES, Plugins: YES
+[2025-09-10 16:02:27] [UNIFIED] [info] BACKUP: Database backup enabled. Found 12 tables.
+[2025-09-10 16:02:27] [UNIFIED] [info] BACKUP: Uploads backup enabled. Found 0 files.
+[2025-09-10 16:02:27] [UNIFIED] [info] BACKUP: Themes backup enabled. Found 0 files.
+[2025-09-10 16:02:27] [UNIFIED] [info] BACKUP: Plugins backup enabled. Found 0 files.
+[2025-09-10 16:02:27] [UNIFIED] [info] BACKUP: Job created. Total files to process: 576
+[2025-09-10 16:02:27] [UNIFIED] [info] AJAX: Backup job megabackup_1757520147_9382 created successfully. Total files: 576, DB Tables: 12
+[2025-09-10 16:02:28] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:02:28] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:02:28] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 1%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:02:30] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:02:30] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:02:30] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 2%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:02:32] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:02:32] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:02:32] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 4%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:03:56] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:07] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:07] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 5%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:09] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:09] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:09] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 6%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:11] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:11] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:11] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 8%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:13] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:13] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:13] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 9%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:15] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:15] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:15] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 11%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:17] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:17] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:17] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 12%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:19] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:19] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:19] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 13%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:21] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:21] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:21] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 15%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:23] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:23] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:23] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 16%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:25] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:25] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:25] [UNIFIED] [info] BACKUP: Database step completed. Next step: uploads
+[2025-09-10 16:04:25] [UNIFIED] [info] BACKUP: Progress calculation - Step: uploads, Progress: 16%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:27] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:27] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:27] [UNIFIED] [info] BACKUP: Processing uploads batch. Progress: 2/2
+[2025-09-10 16:04:27] [UNIFIED] [info] BACKUP: Progress calculation - Step: uploads, Progress: 33%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:29] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:29] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:29] [UNIFIED] [info] BACKUP: Uploads step completed. Next step: themes
+[2025-09-10 16:04:29] [UNIFIED] [info] BACKUP: Progress calculation - Step: themes, Progress: 33%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:31] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:31] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:31] [UNIFIED] [info] BACKUP: Processing themes batch. Progress: 50/390
+[2025-09-10 16:04:31] [UNIFIED] [info] BACKUP: Progress calculation - Step: themes, Progress: 35%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:33] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:33] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:33] [UNIFIED] [info] BACKUP: Processing themes batch. Progress: 100/390
+[2025-09-10 16:04:33] [UNIFIED] [info] BACKUP: Progress calculation - Step: themes, Progress: 37%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:35] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:35] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:35] [UNIFIED] [info] BACKUP: Processing themes batch. Progress: 150/390
+[2025-09-10 16:04:35] [UNIFIED] [info] BACKUP: Progress calculation - Step: themes, Progress: 39%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:37] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:38] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:38] [UNIFIED] [info] BACKUP: Processing themes batch. Progress: 200/390
+[2025-09-10 16:04:38] [UNIFIED] [info] BACKUP: Progress calculation - Step: themes, Progress: 41%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:40] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:40] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:40] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:41] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:41] [UNIFIED] [info] BACKUP: Processing themes batch. Progress: 250/390
+[2025-09-10 16:04:41] [UNIFIED] [info] BACKUP: Progress calculation - Step: themes, Progress: 44%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:44] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:44] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:44] [UNIFIED] [info] BACKUP: Processing themes batch. Progress: 300/390
+[2025-09-10 16:04:44] [UNIFIED] [info] BACKUP: Progress calculation - Step: themes, Progress: 46%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:46] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:46] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:46] [UNIFIED] [info] BACKUP: Processing themes batch. Progress: 350/390
+[2025-09-10 16:04:46] [UNIFIED] [info] BACKUP: Progress calculation - Step: themes, Progress: 48%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:49] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:50] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:50] [UNIFIED] [info] BACKUP: Processing themes batch. Progress: 390/390
+[2025-09-10 16:04:50] [UNIFIED] [info] BACKUP: Progress calculation - Step: themes, Progress: 49%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:55] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:55] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:55] [UNIFIED] [info] BACKUP: Themes step completed. Next step: plugins
+[2025-09-10 16:04:55] [UNIFIED] [info] BACKUP: Progress calculation - Step: plugins, Progress: 50%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:04:58] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:04:58] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:04:58] [UNIFIED] [info] BACKUP: Progress calculation - Step: plugins, Progress: 54%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:05:01] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:05:01] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:05:01] [UNIFIED] [info] BACKUP: Progress calculation - Step: plugins, Progress: 59%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:05:04] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:05:04] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:05:04] [UNIFIED] [info] BACKUP: Progress calculation - Step: plugins, Progress: 63%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:05:06] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:05:06] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:05:06] [UNIFIED] [info] BACKUP: Progress calculation - Step: plugins, Progress: 66%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:05:09] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:05:09] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:05:09] [UNIFIED] [info] BACKUP: Plugins step completed. Moving to zip_files step.
+[2025-09-10 16:05:09] [UNIFIED] [info] BACKUP: Progress calculation - Step: zip_files, Progress: 66%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:05:11] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:05:11] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:05:11] [UNIFIED] [info] BACKUP: Checking disk space. Available: 206 GB
+[2025-09-10 16:05:11] [UNIFIED] [info] BACKUP: Disk space OK or unlimited hosting detected. Proceeding with normal batch size.
+[2025-09-10 16:05:11] [UNIFIED] [info] BACKUP: Processing batch of 100 files starting from offset 0
+[2025-09-10 16:05:11] [UNIFIED] [info] BACKUP: Adding large file (11 MB): wp-content\uploads\2025\09\This-is-the-manual-booking.mov
+[2025-09-10 16:05:12] [UNIFIED] [info] BACKUP: Batch completed. Files added: 100, Files skipped: 0
+[2025-09-10 16:05:20] [UNIFIED] [info] BACKUP: Progress calculation - Step: zip_files, Progress: 69%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:05:22] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:05:22] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:05:22] [UNIFIED] [info] BACKUP: Checking disk space. Available: 206 GB
+[2025-09-10 16:05:22] [UNIFIED] [info] BACKUP: Disk space OK or unlimited hosting detected. Proceeding with normal batch size.
+[2025-09-10 16:05:22] [UNIFIED] [info] BACKUP: Processing batch of 100 files starting from offset 100
+[2025-09-10 16:05:22] [UNIFIED] [info] BACKUP: Batch completed. Files added: 100, Files skipped: 0
+[2025-09-10 16:05:45] [UNIFIED] [info] BACKUP: Progress calculation - Step: zip_files, Progress: 72%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:05:47] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:05:47] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:05:47] [UNIFIED] [info] BACKUP: Checking disk space. Available: 206 GB
+[2025-09-10 16:05:47] [UNIFIED] [info] BACKUP: Disk space OK or unlimited hosting detected. Proceeding with normal batch size.
+[2025-09-10 16:05:47] [UNIFIED] [info] BACKUP: Processing batch of 100 files starting from offset 200
+[2025-09-10 16:05:48] [UNIFIED] [info] BACKUP: Batch completed. Files added: 100, Files skipped: 0
+[2025-09-10 16:05:52] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:05:52] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:06:03] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 16:06:03] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 16:06:03] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 16:06:03] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 16:06:03] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 16:06:03] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 16:06:03] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 16:06:03] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221170659328.0
+[2025-09-10 16:06:03] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 16:06:03] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 16:06:03] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 16:06:03] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 16:06:07] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:06:07] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:06:11] [UNIFIED] [info] BACKUP: Progress calculation - Step: zip_files, Progress: 75%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:14:38] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 16:14:38] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 16:14:38] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 16:14:38] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 16:14:38] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 16:14:38] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 16:14:38] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 16:14:38] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221197062144.0
+[2025-09-10 16:14:38] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 16:14:38] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 16:14:38] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 16:14:38] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 16:14:41] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:14:41] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:14:46] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:14:47] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:14:47] [UNIFIED] [info] AJAX: Backup job initiation started.
+[2025-09-10 16:14:47] [UNIFIED] [info] AJAX: Backup options - DB: YES, Uploads: YES, Themes: YES, Plugins: YES
+[2025-09-10 16:14:47] [UNIFIED] [info] BACKUP: Database backup enabled. Found 12 tables.
+[2025-09-10 16:14:47] [UNIFIED] [info] BACKUP: Uploads backup enabled. Found 0 files.
+[2025-09-10 16:14:48] [UNIFIED] [info] BACKUP: Themes backup enabled. Found 0 files.
+[2025-09-10 16:14:48] [UNIFIED] [info] BACKUP: Plugins backup enabled. Found 0 files.
+[2025-09-10 16:14:48] [UNIFIED] [info] BACKUP: Job created. Total files to process: 578
+[2025-09-10 16:14:48] [UNIFIED] [info] AJAX: Backup job megabackup_1757520887_8196 created successfully. Total files: 578, DB Tables: 12
+[2025-09-10 16:14:50] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:14:50] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:14:50] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 1%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:14:55] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:14:56] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:14:56] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 2%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:01] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:02] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:02] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 4%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:06] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:06] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:07] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 5%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:10] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:11] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:11] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 6%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:14] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:14] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:15] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:16] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:16] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 8%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:20] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:20] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:20] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 9%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:24] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:24] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:24] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 11%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:28] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:28] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:28] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 12%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:34] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:35] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:35] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 13%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:39] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:39] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:39] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 15%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:42] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:43] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:43] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 16%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:48] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:48] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:48] [UNIFIED] [info] BACKUP: Database step completed. Next step: uploads
+[2025-09-10 16:15:48] [UNIFIED] [info] BACKUP: Progress calculation - Step: uploads, Progress: 16%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:15:57] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:15:58] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:15:58] [UNIFIED] [info] BACKUP: Processing uploads batch. Progress: 2/2
+[2025-09-10 16:15:58] [UNIFIED] [info] BACKUP: Progress calculation - Step: uploads, Progress: 33%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:16:02] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 16:16:02] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 16:16:02] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 16:16:02] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 16:16:02] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 16:16:02] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 16:16:02] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 16:16:02] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221189910528.0
+[2025-09-10 16:16:02] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 16:16:02] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 16:16:02] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 16:16:02] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 16:16:06] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:16:07] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:21:31] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 16:21:31] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 16:21:31] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 16:21:31] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 16:21:31] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 16:21:31] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 16:21:31] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 16:21:31] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221193433088.0
+[2025-09-10 16:21:31] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 16:21:31] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 16:21:31] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 16:21:31] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 16:21:33] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:21:34] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:21:35] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:21:35] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:21:35] [UNIFIED] [info] AJAX: Backup job initiation started.
+[2025-09-10 16:21:36] [UNIFIED] [info] AJAX: Backup options - DB: YES, Uploads: YES, Themes: YES, Plugins: YES
+[2025-09-10 16:21:36] [UNIFIED] [info] BACKUP: Database backup enabled. Found 12 tables.
+[2025-09-10 16:21:36] [UNIFIED] [info] BACKUP: Uploads backup enabled. Found 0 files.
+[2025-09-10 16:21:36] [UNIFIED] [info] BACKUP: Themes backup enabled. Found 0 files.
+[2025-09-10 16:21:37] [UNIFIED] [info] BACKUP: Plugins backup enabled. Found 0 files.
+[2025-09-10 16:21:37] [UNIFIED] [info] BACKUP: Job created. Total files to process: 579
+[2025-09-10 16:21:37] [UNIFIED] [info] AJAX: Backup job megabackup_1757521296_8136 created successfully. Total files: 579, DB Tables: 12
+[2025-09-10 16:21:38] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:21:38] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:21:38] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 1%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:21:40] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:21:40] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:21:40] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 2%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:21:42] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:21:42] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:21:42] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 4%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:21:44] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:21:45] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:21:45] [UNIFIED] [info] Backup job megabackup_1757521296_8136 was stopped by user.
+[2025-09-10 16:21:45] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:21:45] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:23:59] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 16:23:59] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 16:23:59] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 16:23:59] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 16:23:59] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 16:23:59] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 16:23:59] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 16:23:59] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221190758400.0
+[2025-09-10 16:23:59] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 16:23:59] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 16:23:59] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 16:23:59] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 16:24:00] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:24:00] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:24:09] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 16:24:09] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 16:24:09] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 16:24:09] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 16:24:09] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 16:24:09] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 16:24:09] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 16:24:09] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221190606848.0
+[2025-09-10 16:24:09] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 16:24:09] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 16:24:09] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 16:24:09] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 16:24:10] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:24:10] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:26:01] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 16:26:01] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 16:26:01] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 16:26:01] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 16:26:01] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 16:26:01] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 16:26:01] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 16:26:01] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221192798208.0
+[2025-09-10 16:26:01] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 16:26:01] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 16:26:01] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 16:26:01] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 16:26:04] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:26:04] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:26:54] [UNIFIED] [info] UNIFIED: Low execution time detected: 120s - will adapt processing
+[2025-09-10 16:26:54] [UNIFIED] [info] UNIFIED: Low upload limit detected: 40M - chunked upload will compensate
+[2025-09-10 16:26:54] [UNIFIED] [info] UNIFIED: Environment check completed
+[2025-09-10 16:26:54] [UNIFIED] [info] UNIFIED: Memory limit: 512M
+[2025-09-10 16:26:54] [UNIFIED] [info] UNIFIED: Max execution time: 120
+[2025-09-10 16:26:54] [UNIFIED] [info] UNIFIED: Upload max filesize: 40M
+[2025-09-10 16:26:54] [UNIFIED] [info] UNIFIED: Post max size: 40M
+[2025-09-10 16:26:54] [UNIFIED] [info] DISK SPACE DEBUG: Free space raw value: 221192327168.0
+[2025-09-10 16:26:54] [UNIFIED] [info] DISK SPACE DEBUG: Total space raw value: 511038189568.0
+[2025-09-10 16:26:54] [UNIFIED] [info] DISK SPACE DEBUG: Free space formatted: 206 GB
+[2025-09-10 16:26:54] [UNIFIED] [info] DISK SPACE DEBUG: Server software: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+[2025-09-10 16:26:54] [UNIFIED] [warning] UNIFIED: Warnings detected but proceeding: Max execution time (120s) is low but workable. UNIFIED MEGAFILE will adapt processing accordingly., Upload max filesize (40M) is low. UNIFIED MEGAFILE chunked upload will handle large files automatically.
+[2025-09-10 16:26:54] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:26:54] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:26:55] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:26:55] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:26:55] [UNIFIED] [info] AJAX: Backup job initiation started.
+[2025-09-10 16:26:55] [UNIFIED] [info] AJAX: Backup options - DB: YES, Uploads: YES, Themes: YES, Plugins: YES
+[2025-09-10 16:26:56] [UNIFIED] [info] BACKUP: Database backup enabled. Found 12 tables.
+[2025-09-10 16:26:56] [UNIFIED] [info] BACKUP: Uploads backup enabled. Found 0 files.
+[2025-09-10 16:26:56] [UNIFIED] [info] BACKUP: Themes backup enabled. Found 0 files.
+[2025-09-10 16:26:56] [UNIFIED] [info] BACKUP: Plugins backup enabled. Found 0 files.
+[2025-09-10 16:26:56] [UNIFIED] [info] BACKUP: Job created. Total files to process: 579
+[2025-09-10 16:26:56] [UNIFIED] [info] AJAX: Backup job megabackup_1757521615_6519 created successfully. Total files: 579, DB Tables: 12
+[2025-09-10 16:26:56] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:26:56] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:26:56] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 1%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:26:59] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:26:59] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:26:59] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 2%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:27:01] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:27:01] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:27:01] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 4%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:27:03] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:27:03] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:27:04] [UNIFIED] [info] BACKUP: Progress calculation - Step: database, Progress: 5%, Enabled steps: database, uploads, themes, plugins, zip_files, finalize
+[2025-09-10 16:27:05] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 1024M, Time: 0s
+[2025-09-10 16:27:06] [UNIFIED] [info] PHP limits optimized for MegaBackup operations - Memory: 2048M, Time: 0s
+[2025-09-10 16:27:06] [UNIFIED] [info] Backup job megabackup_1757521615_6519 was stopped by user.

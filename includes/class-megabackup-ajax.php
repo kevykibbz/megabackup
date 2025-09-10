@@ -23,6 +23,9 @@ class MegaBackup_Ajax {
         add_action('wp_ajax_megabackup_get_restore_progress', array($this, 'get_restore_progress'));
         add_action('wp_ajax_megabackup_get_logs', array($this, 'get_logs'));
         add_action('wp_ajax_megabackup_delete_backup', array($this, 'delete_backup'));
+        add_action('wp_ajax_megabackup_upload_backup', array($this, 'upload_backup'));
+        add_action('wp_ajax_megabackup_check_ongoing_operations', array($this, 'check_ongoing_operations'));
+        add_action('wp_ajax_megabackup_stop_backup', array($this, 'stop_backup'));
         add_action('wp_ajax_megabackup_get_restore_logs', array($this, 'get_restore_logs'));
         add_action('wp_ajax_megabackup_upload_only', array($this, 'upload_only'));
         add_action('wp_ajax_megabackup_chunk_upload', array($this, 'chunk_upload'));
@@ -104,6 +107,18 @@ class MegaBackup_Ajax {
             } else {
                 wp_send_json_error('Backup job not found or has expired. Please start again.');
             }
+        }
+
+        // Check if the job has been cancelled
+        if (isset($job['status']) && $job['status'] === 'cancelled') {
+            $progress = array(
+                'progress' => 0,
+                'message' => 'Backup was stopped by user',
+                'job_id' => $job['job_id'],
+                'status' => 'cancelled'
+            );
+            wp_send_json_success($progress);
+            return;
         }
 
         // If the job is already completed, don't process further
@@ -376,5 +391,163 @@ class MegaBackup_Ajax {
         fclose($out);
         rmdir($chunks_dir);
         wp_send_json_success(['message' => 'File finalized successfully.', 'filename' => $file_name]);
+    }
+
+    /**
+     * Handle backup file upload
+     */
+    public function upload_backup() {
+        // Verify nonce and capabilities
+        if (!wp_verify_nonce($_POST['nonce'], 'megabackup_nonce') || !current_user_can('manage_options')) {
+            wp_send_json_error('Unauthorized request.');
+            return;
+        }
+
+        // Check if file was uploaded
+        if (!isset($_FILES['backup_file']) || $_FILES['backup_file']['error'] !== UPLOAD_ERR_OK) {
+            wp_send_json_error('No file uploaded or upload error occurred.');
+            return;
+        }
+
+        $uploaded_file = $_FILES['backup_file'];
+        
+        // Validate file extension
+        if (!str_ends_with($uploaded_file['name'], '.megafile')) {
+            wp_send_json_error('Invalid file type. Only .megafile files are allowed.');
+            return;
+        }
+
+        // Ensure backups directory exists
+        $backups_dir = MEGABACKUP_BACKUPS_DIR;
+        if (!is_dir($backups_dir)) {
+            if (!wp_mkdir_p($backups_dir)) {
+                wp_send_json_error('Could not create backups directory.');
+                return;
+            }
+        }
+
+        // Generate unique filename to avoid conflicts
+        $file_info = pathinfo($uploaded_file['name']);
+        $base_name = $file_info['filename'];
+        $extension = $file_info['extension'];
+        $counter = 1;
+        $final_name = $uploaded_file['name'];
+        
+        while (file_exists($backups_dir . $final_name)) {
+            $final_name = $base_name . '_' . $counter . '.' . $extension;
+            $counter++;
+        }
+
+        $destination = $backups_dir . $final_name;
+
+        // Move uploaded file to backups directory
+        if (move_uploaded_file($uploaded_file['tmp_name'], $destination)) {
+            MegaBackup_Core::log("Backup file uploaded successfully: " . $final_name);
+            wp_send_json_success("Backup file '{$final_name}' uploaded successfully.");
+        } else {
+            wp_send_json_error('Failed to move uploaded file to backups directory.');
+        }
+    }
+
+    /**
+     * Check for ongoing backup or restore operations
+     */
+    public function check_ongoing_operations() {
+        if (!wp_verify_nonce($_POST['nonce'], 'megabackup_nonce') || !current_user_can('manage_options')) {
+            wp_send_json_error('Unauthorized request.');
+            return;
+        }
+
+        $backup_jobs = get_option('megabackup_jobs', array());
+        $restore_jobs = get_option('megabackup_restore_jobs', array());
+        
+        $ongoing_backup = null;
+        $ongoing_restore = null;
+        
+        // Find ongoing backup job
+        foreach ($backup_jobs as $job_id => $job_data) {
+            if (isset($job_data['status']) && $job_data['status'] === 'processing') {
+                $ongoing_backup = $job_id;
+                break;
+            }
+        }
+        
+        // Find ongoing restore job
+        foreach ($restore_jobs as $job_id => $job_data) {
+            if (isset($job_data['status']) && $job_data['status'] === 'processing') {
+                $ongoing_restore = $job_id;
+                break;
+            }
+        }
+
+        wp_send_json_success(array(
+            'backup_job_id' => $ongoing_backup,
+            'restore_job_id' => $ongoing_restore
+        ));
+    }
+
+    /**
+     * Stop an ongoing backup operation
+     */
+    public function stop_backup() {
+        if (!wp_verify_nonce($_POST['nonce'], 'megabackup_nonce') || !current_user_can('manage_options')) {
+            wp_send_json_error('Unauthorized request.');
+            return;
+        }
+
+        $job_id = sanitize_text_field($_POST['job_id']);
+        
+        // First check if there's an active job in transient
+        $current_job = get_transient('megabackup_job');
+        if ($current_job && $current_job['job_id'] === $job_id) {
+            // Mark the job as cancelled in transient
+            $current_job['status'] = 'cancelled';
+            $current_job['cancelled_at'] = time();
+            set_transient('megabackup_job', $current_job, DAY_IN_SECONDS);
+            
+            // Update progress to indicate cancellation
+            $progress = array(
+                'progress' => 0,
+                'message' => 'Backup stopped by user',
+                'job_id' => $job_id,
+                'status' => 'cancelled'
+            );
+            set_transient('megabackup_progress', $progress, DAY_IN_SECONDS);
+            
+            // Clean up partial backup file if it exists
+            if (isset($current_job['backup_path']) && file_exists($current_job['backup_path'])) {
+                unlink($current_job['backup_path']);
+            }
+            
+            // Clean up temp SQL file if it exists
+            if (isset($current_job['temp_sql_path']) && file_exists($current_job['temp_sql_path'])) {
+                unlink($current_job['temp_sql_path']);
+            }
+            
+            MegaBackup_Core::log("Backup job {$job_id} was stopped by user.");
+            wp_send_json_success('Backup stopped successfully.');
+            return;
+        }
+        
+        // Fallback: check the backup_jobs option (for legacy support)
+        $backup_jobs = get_option('megabackup_jobs', array());
+        
+        if (!isset($backup_jobs[$job_id])) {
+            wp_send_json_error('Backup job not found.');
+            return;
+        }
+
+        // Mark job as cancelled
+        $backup_jobs[$job_id]['status'] = 'cancelled';
+        $backup_jobs[$job_id]['cancelled_at'] = time();
+        update_option('megabackup_jobs', $backup_jobs);
+
+        // Clean up partial backup file if it exists
+        if (isset($backup_jobs[$job_id]['backup_path']) && file_exists($backup_jobs[$job_id]['backup_path'])) {
+            unlink($backup_jobs[$job_id]['backup_path']);
+        }
+
+        MegaBackup_Core::log("Backup job {$job_id} was stopped by user.");
+        wp_send_json_success('Backup stopped successfully.');
     }
 }

@@ -2,6 +2,46 @@ jQuery(document).ready(function($) {
 
     let backupInProgress = false;
     let restoreInProgress = false;
+    let currentBackupJobId = null;
+    let currentRestoreJobId = null;
+
+    // Initialize UI state - ensure stop button is hidden on page load
+    $('#stop-backup').hide();
+
+    // Check for ongoing operations on page load
+    checkOngoingOperations();
+
+    /**
+     * Check if there are any ongoing backup or restore operations
+     */
+    function checkOngoingOperations() {
+        $.ajax({
+            url: megabackup_ajax.ajax_url,
+            type: 'POST',
+            data: {
+                action: 'megabackup_check_ongoing_operations',
+                nonce: megabackup_ajax.nonce
+            },
+            success: function(response) {
+                if (response.success && response.data) {
+                    if (response.data.backup_job_id) {
+                        currentBackupJobId = response.data.backup_job_id;
+                        backupInProgress = true;
+                        $('#backup-progress').show();
+                        $('#start-backup').prop('disabled', true).text('Backup in Progress...');
+                        $('#stop-backup').prop('disabled', false).show();
+                        processBackupBatch(currentBackupJobId, 0);
+                    }
+                    if (response.data.restore_job_id) {
+                        currentRestoreJobId = response.data.restore_job_id;
+                        restoreInProgress = true;
+                        $('#restore-progress').show();
+                        processRestoreBatch(currentRestoreJobId, 0);
+                    }
+                }
+            }
+        });
+    }
 
     /**
      * Check if at least one backup option is selected and update button state
@@ -78,6 +118,45 @@ jQuery(document).ready(function($) {
             include_plugins: $('#include-plugins').is(':checked') ? 'true' : 'false'
         };
         startBackupPlanner(options);
+    });
+
+    // --- STOP BACKUP TRIGGER ---
+    $('#stop-backup').on('click', function() {
+        console.log('Stop backup clicked. backupInProgress:', backupInProgress, 'currentBackupJobId:', currentBackupJobId);
+        
+        if (!backupInProgress || !currentBackupJobId) {
+            console.log('No backup in progress or no job ID');
+            return;
+        }
+        
+        if (!confirm('Are you sure you want to stop the current backup? This will cancel the operation and you may need to clean up incomplete files.')) {
+            return;
+        }
+        
+        console.log('Sending stop backup request for job:', currentBackupJobId);
+        
+        $.ajax({
+            url: megabackup_ajax.ajax_url,
+            type: 'POST',
+            data: {
+                action: 'megabackup_stop_backup',
+                nonce: megabackup_ajax.nonce,
+                job_id: currentBackupJobId
+            },
+            success: function(response) {
+                console.log('Stop backup response:', response);
+                if (response.success) {
+                    showSuccess('Backup stopped successfully.');
+                    resetUI('backup');
+                } else {
+                    showError('Failed to stop backup: ' + (response.data || 'Unknown error'));
+                }
+            },
+            error: function(xhr, status, error) {
+                console.log('Stop backup error:', xhr, status, error);
+                showError('Failed to stop backup: Network error');
+            }
+        });
     });
 
     // --- SCHEDULE SAVE TRIGGER (Final Version) ---
@@ -166,6 +245,7 @@ jQuery(document).ready(function($) {
 
     function startBackupPlanner(options) {
         backupInProgress = true;
+        console.log('Starting backup, backupInProgress set to:', backupInProgress);
         updateUIForStart('backup');
         addLog('#backup-logs .logs-content', 'Creating backup job and scanning files...', 'info');
 
@@ -179,6 +259,8 @@ jQuery(document).ready(function($) {
             },
             success: function(response) {
                 if (response.success) {
+                    currentBackupJobId = response.data.job_id;
+                    console.log('Backup job created with ID:', currentBackupJobId);
                     addLog('#backup-logs .logs-content', 'Job created successfully. Starting batch processing.', 'info');
                     processBackupBatch(response.data.job_id);
                 } else {
@@ -194,7 +276,10 @@ jQuery(document).ready(function($) {
     }
 
     function processBackupBatch(job_id, retryCount = 0) {
-        if (!backupInProgress) return;
+        if (!backupInProgress) {
+            console.log('Backup no longer in progress, stopping batch processing');
+            return;
+        }
         const maxRetries = 3;
 
         $.ajax({
@@ -207,15 +292,34 @@ jQuery(document).ready(function($) {
             },
             success: function(response) {
                 if (response.success) {
-                    updateProgress('#backup-progress', response.data.progress, response.data.message);
+                    // Check if backup was cancelled
+                    if (response.data.status === 'cancelled') {
+                        console.log('Backup was cancelled');
+                        showSuccess('Backup was stopped successfully.');
+                        resetUI('backup');
+                        return;
+                    }
+                    
                     if (response.data.progress < 100) {
+                        updateProgress('#backup-progress', response.data.progress, response.data.message);
                         setTimeout(() => processBackupBatch(job_id, 0), 1500);
                     } else {
-                        showSuccess('Backup completed successfully!');
-                        resetUI('backup');
-                        refreshBackupsList();
+                        // Update to 100% with completion message first
+                        updateProgress('#backup-progress', 100, 'Backup completed successfully!');
+                        setTimeout(() => {
+                            showSuccess('Backup completed successfully!');
+                            resetUI('backup');
+                            refreshBackupsList();
+                        }, 1000); // Small delay to show completion message
                     }
                 } else {
+                    // Check if the error is due to cancellation
+                    if (response.data && response.data.includes('cancelled')) {
+                        console.log('Backup was cancelled via error response');
+                        showSuccess('Backup was stopped successfully.');
+                        resetUI('backup');
+                        return;
+                    }
                     showError('A batch failed: ' + (response.data || 'Unknown error'));
                     resetUI('backup');
                 }
@@ -315,6 +419,8 @@ jQuery(document).ready(function($) {
 
         if (type === 'backup') {
             $('#start-backup').prop('disabled', true).addClass('loading').html('<span class="spinner"></span>Backing up...');
+            $('#stop-backup').prop('disabled', false).show();
+            console.log('Stop backup button shown and enabled');
         } else {
             $('.restore-backup, .delete-backup').prop('disabled', true);
             addLog('#restore-logs .logs-content', 'Restore process started. Please do not close this page.', 'warning');
@@ -324,10 +430,15 @@ jQuery(document).ready(function($) {
     function resetUI(type) {
         if (type === 'backup') {
             backupInProgress = false;
-            $('#start-backup').prop('disabled', false).removeClass('loading').text('Create Backup');
+            currentBackupJobId = null;
+            $('#start-backup').prop('disabled', false).removeClass('loading').text('Start Backup');
+            $('#stop-backup').hide();
+            $('#backup-progress').hide();
         } else {
             restoreInProgress = false;
+            currentRestoreJobId = null;
             $('.restore-backup, .delete-backup').prop('disabled', false);
+            $('#restore-progress').hide();
         }
     }
 
@@ -370,7 +481,75 @@ jQuery(document).ready(function($) {
         $('#backups-list').load(window.location.href + ' #backups-list > *');
     }
 
-    $('#upload-backup').on('click', function() { /* Upload logic is already chunked and can remain */ });
+    // --- UPLOAD BACKUP FILE ---
+    $('#upload-backup').on('click', function() {
+        const fileInput = $('#backup-upload')[0];
+        const file = fileInput.files[0];
+        
+        if (!file) {
+            showError('Please select a backup file to upload.');
+            return;
+        }
+        
+        if (!file.name.endsWith('.megafile')) {
+            showError('Please select a valid .megafile backup file.');
+            return;
+        }
+        
+        const $button = $(this);
+        const originalText = $button.text();
+        $button.prop('disabled', true).text('Uploading...');
+        
+        $('#upload-progress').show();
+        
+        // Create FormData for file upload
+        const formData = new FormData();
+        formData.append('action', 'megabackup_upload_backup');
+        formData.append('nonce', megabackup_ajax.nonce);
+        formData.append('backup_file', file);
+        
+        // Use XMLHttpRequest for upload progress
+        const xhr = new XMLHttpRequest();
+        
+        // Track upload progress
+        xhr.upload.addEventListener('progress', function(e) {
+            if (e.lengthComputable) {
+                const percentComplete = (e.loaded / e.total) * 100;
+                updateProgress('#upload-progress', percentComplete, 'Uploading: ' + Math.round(percentComplete) + '%');
+            }
+        });
+        
+        xhr.addEventListener('load', function() {
+            if (xhr.status === 200) {
+                try {
+                    const response = JSON.parse(xhr.responseText);
+                    if (response.success) {
+                        showSuccess('Backup file uploaded successfully!');
+                        refreshBackupsList();
+                        fileInput.value = ''; // Clear file input
+                    } else {
+                        showError('Upload failed: ' + (response.data || 'Unknown error'));
+                    }
+                } catch (e) {
+                    showError('Upload failed: Invalid server response');
+                }
+            } else {
+                showError('Upload failed: Server error ' + xhr.status);
+            }
+            
+            $button.prop('disabled', false).text(originalText);
+            $('#upload-progress').hide();
+        });
+        
+        xhr.addEventListener('error', function() {
+            showError('Upload failed: Network error');
+            $button.prop('disabled', false).text(originalText);
+            $('#upload-progress').hide();
+        });
+        
+        xhr.open('POST', megabackup_ajax.ajax_url);
+        xhr.send(formData);
+    });
     $(document).on('click', '.delete-backup', function() {
         const backupFile = $(this).data('file');
         if (!confirm('Are you sure you want to delete this backup?')) return;
